@@ -1,0 +1,15 @@
+# Datos (se descargan automáticamente desde Kaggle vía kagglehub, no se versionan)
+Dataset/
+Dataset_sign_mnist/
+archive.zip
+
+# Checkpoints y cachés de Jupyter
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Archivos del sistema operativo
+.DS_Store
+
+# Archivos temporales de Office/Word
+~$*.docx
+.~lock.*#
