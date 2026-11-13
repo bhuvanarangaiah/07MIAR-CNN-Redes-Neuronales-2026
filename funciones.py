@@ -53,7 +53,7 @@ def diagnosticar_neuronas_muertas(modelo, datos_muestra):
     )
     
     # Pasamos una muestra de imágenes (ej. 256 imágenes) sin activar Dropout ni Augmentation
-    activaciones = extractor.predict(datos_muestra, verbose=0)
+    activaciones = [act.numpy() for act in extractor(datos_muestra, training=False)]
     
     print(f"{'Capa':<25} | {'Total':<8} | {'Muertas':<8} | {'% Muertas'}")
     print("-" * 55)
