@@ -13,3 +13,9 @@ archive.zip
 # Archivos temporales de Office/Word
 ~$*.docx
 .~lock.*#
+
+# Entorno virtual, modelos entrenados y cachés de Python
+.venv/
+modelos/
+__pycache__/
+*.pyc
